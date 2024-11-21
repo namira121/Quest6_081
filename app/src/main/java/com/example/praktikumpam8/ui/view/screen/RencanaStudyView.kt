@@ -126,15 +126,15 @@ fun RencanaStudyView(
                 fontWeight = FontWeight.Light
             )
             Spacer(modifier = Modifier.padding(8.dp))
-            Row (
+            Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
-            ){
-                RuangKelas.listKelas.forEach{data ->
-                    Row (verticalAlignment = Alignment.CenterVertically){
+            ) {
+                RuangKelas.listKelas.forEach { data ->
+                    Row(verticalAlignment = Alignment.CenterVertically) {
                         RadioButton(
-                            selected = pilihanKelas ==data,
-                            onClick = {pilihanKelas = data}
+                            selected = pilihanKelas == data,
+                            onClick = { pilihanKelas = data }
                         )
                         Text(data)
                     }
@@ -144,17 +144,21 @@ fun RencanaStudyView(
             HorizontalDivider()
             Spacer(modifier = Modifier.padding(8.dp))
             Text(text = "Klausul Persetujuan Mahasiswa", fontWeight = FontWeight.Bold)
-            Row (verticalAlignment = Alignment.CenterVertically){
+            Row(verticalAlignment = Alignment.CenterVertically) {
                 Checkbox(
                     checked = checked,
-                    onCheckedChange = {checked = it},
+                    onCheckedChange = { checked = it },
                     enabled = choosenDropdown.isNotBlank() && pilihanKelas.isNotBlank()
                 )
-                Text(text = "Saya menyetujui setiap pernyataan yang ada tanpa ada paksaan dari pihak manapun.",
-                    fontWeight = FontWeight.Light, fontSize = 10.sp)
+                Text(
+                    text = "Saya menyetujui setiap pernyataan yang ada tanpa ada paksaan dari pihak manapun.",
+                    fontWeight = FontWeight.Light, fontSize = 10.sp
+                )
             }
             Spacer(modifier = Modifier.padding(8.dp))
-
+            Row(
+                modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly
+            ) { }
         }
     }
 }
