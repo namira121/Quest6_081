@@ -2,6 +2,7 @@ package com.example.praktikumpam8.ui.view.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -36,5 +37,8 @@ fun RencanaStudyView(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.padding(16.dp))
+        Row(
+            verticalAlignment = Alignment.CenterVertically
+        ) {  }
     }
 }
