@@ -1,6 +1,7 @@
 package com.example.praktikumpam8.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
@@ -23,7 +24,6 @@ fun MahasiswaApp(
     mahasiswaViewModel: MahasiswaViewModel= viewModel(),
     krsViewModel: RencanaStudyViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
-
 ){
-
+    val mahasiswaUiState = mahasiswaViewModel.mahasiswaUiState.collectAsState().value
 }
