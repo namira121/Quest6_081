@@ -15,6 +15,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -92,7 +93,9 @@ fun RencanaStudyView(
                     color = Color.White,
                     shape = RoundedCornerShape(topEnd = 15.dp, topStart = 15.dp)
                 )
-                .fillMaxSize()
-        ) { }
+                .fillMaxSize(),
+        ) {
+            Text(text = "Pilih Mata Kuliah Peminatan", fontWeight = FontWeight.Bold)
+        }
     }
 }
