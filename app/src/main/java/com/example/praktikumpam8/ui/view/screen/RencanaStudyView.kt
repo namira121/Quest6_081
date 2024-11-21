@@ -53,6 +53,9 @@ fun RencanaStudyView(
                     .size(50.dp)
             )
             Spacer(modifier = Modifier.padding(start = 16.dp))
+            Column (
+                modifier = Modifier.weight(1f)
+            ){  }
         }
     }
 }
