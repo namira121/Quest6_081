@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material3.Icon
@@ -61,10 +62,11 @@ fun RencanaStudyView(
                     .size(50.dp)
             )
             Spacer(modifier = Modifier.padding(start = 16.dp))
-            Column (
+            Column(
                 modifier = Modifier.weight(1f)
-            ){
-                Text(text = mahasiswa.nama,
+            ) {
+                Text(
+                    text = mahasiswa.nama,
                     fontWeight = FontWeight.Bold,
                     fontSize = 15.sp,
                     color = Color.White
@@ -76,11 +78,20 @@ fun RencanaStudyView(
                     color = Color.White
                 )
             }
-            Box{
-                Icon(imageVector = Icons.Filled.Notifications,
+            Box {
+                Icon(
+                    imageVector = Icons.Filled.Notifications,
                     contentDescription = "",
-                    tint = Color.White)
+                    tint = Color.White
+                )
             }
         }
+        Box(
+            modifier = Modifier
+                .background(
+                    color = Color.White,
+                    shape = RoundedCornerShape(topEnd = 15.dp, topStart = 15.dp)
+                )
+        ) { }
     }
 }
