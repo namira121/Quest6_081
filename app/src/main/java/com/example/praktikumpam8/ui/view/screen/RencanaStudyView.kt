@@ -96,9 +96,12 @@ fun RencanaStudyView(
                 .fillMaxSize(),
         ) {
             Text(text = "Pilih Mata Kuliah Peminatan", fontWeight = FontWeight.Bold)
-            Text(text = "Silahkan pilih mata kuliah yang anda inginkan",
+            Text(
+                text = "Silahkan pilih mata kuliah yang anda inginkan",
                 fontSize = 12.sp,
-                fontWeight = FontWeight.Light)
+                fontWeight = FontWeight.Light
+            )
+            Spacer(modifier = Modifier.padding(8.dp))
         }
     }
 }
