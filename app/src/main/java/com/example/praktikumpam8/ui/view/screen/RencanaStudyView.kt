@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -19,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.praktikumpam8.R
 import com.example.praktikumpam8.model.Mahasiswa
@@ -55,7 +57,11 @@ fun RencanaStudyView(
             Spacer(modifier = Modifier.padding(start = 16.dp))
             Column (
                 modifier = Modifier.weight(1f)
-            ){  }
+            ){
+                Text(text = mahasiswa.nama,
+                    fontWeight = FontWeight.Bold,
+                )
+            }
         }
     }
 }
