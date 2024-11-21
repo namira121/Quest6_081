@@ -113,6 +113,7 @@ fun RencanaStudyView(
                 }
             )
             Spacer(modifier = Modifier.padding(8.dp))
+            Text(text = "Pilih Kelas Belajar", fontWeight = FontWeight.Bold)
         }
     }
 }
