@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -47,7 +48,7 @@ fun RencanaStudyView(
             Image(
                 painter = painterResource(id = R.drawable.umy),
                 contentDescription = "",
-                modifier = Modifier.clip(shape = CircleShape)
+                modifier = Modifier.clip(shape = CircleShape).size(50.dp)
             )
         }
     }
