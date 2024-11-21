@@ -26,9 +26,7 @@ fun RencanaStudyView(
     var pilihanKelas by remember { mutableStateOf("") }
     var listData: MutableList<String> = mutableListOf(choosenDropdown, pilihanKelas)
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(color = colorResource(id = R.color.primary))
+
     ) {
 
     }
