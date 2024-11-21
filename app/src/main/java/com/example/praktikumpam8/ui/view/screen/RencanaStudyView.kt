@@ -48,8 +48,11 @@ fun RencanaStudyView(
             Image(
                 painter = painterResource(id = R.drawable.umy),
                 contentDescription = "",
-                modifier = Modifier.clip(shape = CircleShape).size(50.dp)
+                modifier = Modifier
+                    .clip(shape = CircleShape)
+                    .size(50.dp)
             )
+            Spacer(modifier = Modifier.padding(start = 16.dp))
         }
     }
 }
