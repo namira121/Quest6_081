@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             PraktikumPAM8Theme {
                 Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
-                    MahasiswaApp(modifier = Modifier.padding(innerPadding))
+                    MahasiswaApp(modifier = Modifier.padding(innerPadding),)
                 }
             }
         }
